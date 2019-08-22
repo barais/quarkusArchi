@@ -5,7 +5,7 @@
 mvn io.quarkus:quarkus-maven-plugin:0.21.1:create     -DprojectGroupId=fr.isitc     -DprojectArtifactId=roadplanner     -DclassName="fr.istic.rest.TrajetResource" -Dpath="/trajets"   -Dextensions="keycloak, smallrye-fault-tolerance, resteasy-jsonb, hibernate-validator, openapi, hibernate-orm-panache, flyway, agroal, narayana-jta, jdbc-mariadb, smallrye-opentracing, mailer, scheduler"
 ```
 
-````bash
+```bash
 export access_token=$(\                                                                    en
     curl -X POST http://localhost:8180/auth/realms/quarkus/protocol/openid-connect/token \
     --user backend-service:secret \
@@ -14,6 +14,6 @@ export access_token=$(\                                                         
  )
 ```
 
-````bash
+```bash
 curl -X GET   http://localhost:8080/api/gifts   -H "Authorization: Bearer "$access_token```
 ```
