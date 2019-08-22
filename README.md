@@ -1,7 +1,7 @@
 # Play with quarkus
 
 
-````bash
+```bash
 mvn io.quarkus:quarkus-maven-plugin:0.21.1:create     -DprojectGroupId=fr.isitc     -DprojectArtifactId=roadplanner     -DclassName="fr.istic.rest.TrajetResource" -Dpath="/trajets"   -Dextensions="keycloak, smallrye-fault-tolerance, resteasy-jsonb, hibernate-validator, openapi, hibernate-orm-panache, flyway, agroal, narayana-jta, jdbc-mariadb, smallrye-opentracing, mailer, scheduler"
 ```
 
